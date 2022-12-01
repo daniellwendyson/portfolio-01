@@ -178,14 +178,14 @@
             <h2 class="section__title">Projetos_</h2>
 
             <div class="project__categories">
-                <button class="category__btn text-xs active-work">TODOS</button>
-                <button class="category__btn text-xs">CLONES</button>
-                <button class="category__btn text-xs">WEB-SITES</button>
-                <button class="category__btn text-xs">LANDING PAGES</button>
+                <button class="category__btn text-xs active-work" data-filter="all">TODOS</button>
+                <button class="category__btn text-xs" data-filter=".clone">CLONES</button>
+                <button class="category__btn text-xs" data-filter=".web">WEB-SITES</button>
+                <button class="category__btn text-xs" data-filter=".landing">LANDING PAGES</button>
             </div>
 
             <div class="projects__container grid">
-                <div class="project__item grid">
+                <div class="project__item grid mix web">
                     <img src="assets/img/project-1.png" alt="" class="project__img">
 
                     <div class="project__data">
@@ -202,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="project__item grid">
+                <div class="project__item grid mix web">
                     <img src="assets/img/project-2.png" alt="" class="project__img">
 
                     <div class="project__data">
@@ -218,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="project__item grid">
+                <div class="project__item grid mix web">
                     <img src="assets/img/project-3.png" alt="" class="project__img">
 
                     <div class="project__data">
@@ -238,7 +238,8 @@
     </main>
 
 
-
+    <!-- mixitup -->
+    <script src="assets/js/mixitup.min.js"></script>
     <!-- js -->
     <script src="assets/js/main.js"></script>
 </body>
