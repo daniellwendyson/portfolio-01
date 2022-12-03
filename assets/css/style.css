@@ -223,8 +223,6 @@ input {
     background-color: var(--text-color);
 }
 
-
-
 .scroll-header .nav__link:hover,
 .scroll-header .active-link {
     color: var(--primary-color);
