@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/skins/color-1.css">
+    <!-- cores -->
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
     <title>Meu portfólio</title>
 </head>
 <body>
@@ -296,14 +300,31 @@
                 </div>
             </div>
         </section>
+
+        <!-- mudança de estilo -->
+        <div class="style__switcher">
+            <div class="style__switcher-toggler">
+                <i class="ri-settings-4-fill"></i>
+            </div>
+
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            </div>
+        </div>
     </main>
 
 
     <!-- mixitup -->
     <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.ksdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- js -->
     <script src="assets/js/main.js"></script>
+    <!-- common -->
+    <script src="assets/js/common.js"></script>
 </body>
 </html>
