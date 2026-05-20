@@ -41,6 +41,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body,
@@ -83,6 +84,7 @@ button {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 textarea,
@@ -429,8 +431,9 @@ input {
 
 .project__item {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   background: #fff;
+  align-items: stretch;
   border: 1px solid var(--border-color);
   overflow: hidden;
   border-radius: 0.5rem;
@@ -447,6 +450,7 @@ input {
 
 .project__data {
   padding: 2rem;
+  min-width: 0;
 }
 
 .project__title {
@@ -753,6 +757,11 @@ input {
 
   .home__img {
     display: none;
+  }
+
+  .project__image {
+    width: 100%;
+    height: auto;
   }
 
   .contact__container {
